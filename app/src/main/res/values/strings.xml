@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">GUARDGPS1.0</string>
+
+    <string-array name="name_array">
+        <item>Daniela</item>
+        <item>Lorena</item>
+        <item>Karol</item>
+        <item>yamilet</item>
+        <item>heidy</item>
+        <item>Diana</item>
+        <item>Geanina</item>
+        <item>Sthepany</item>
+        <item>Dayanna</item>
+        <item>Miguel</item>
+        <item>Miguel</item>
+        <item>Miguel</item>
+        <item>Miguel</item>
+    </string-array>
 </resources>

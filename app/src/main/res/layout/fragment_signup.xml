@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:padding="25dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:gravity="center"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <EditText
+                android:id="@+id/edtTxtNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:maxLength="15"
+                android:drawableLeft="@drawable/grisusuario"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <EditText
+                android:id="@+id/edtTxtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:maxLength="15"
+                android:drawableLeft="@drawable/grisusuario"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lastname"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <EditText
+                android:id="@+id/edtTxtLasname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:maxLength="15"
+                android:drawableLeft="@drawable/grisusuario"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type document"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <Spinner
+                android:id="@+id/Tdocumento_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Document"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <EditText
+                android:id="@+id/edtTxtDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:maxLength="15"
+                android:drawableLeft="@drawable/grisusuario"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <EditText
+                android:id="@+id/edtTxtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto"
+                android:maxLength="15"
+                android:drawableLeft="@drawable/grisusuario"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <EditText
+                android:id="@+id/editextContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:textColor="@color/texto"
+                android:maxLength="15"
+                android:drawableLeft="@drawable/griscontrasena"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repeat Password"
+                android:textColor="@color/texto"
+                android:textSize="6.5pt"
+                />
+            <EditText
+                android:id="@+id/editextRepitContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:textColor="@color/texto"
+                android:maxLength="15"
+                android:drawableLeft="@drawable/griscontrasena"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="bottom|center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/actionlogin"
+            android:text="Registrar"
+            android:textColor="@color/texto"
+            android:background="@drawable/boton_ovalado_largo"/>
+    </LinearLayout>
+</LinearLayout>

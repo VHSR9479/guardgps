@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/ctrToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/primario"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextColor="@color/texto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/boton_invisible"
+                android:src="@drawable/menu">
+
+            </ImageButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ADD VEHICLE"
+                android:gravity="right|center"
+                android:textColor="@color/texto"
+                android:layout_marginRight="10dp"
+                android:textSize="10pt">
+
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/ctrToolbar"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Licence Plate"
+            android:textColor="@color/black"
+            android:textSize="6.5pt"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:id="@+id/edtTxtLicence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto"
+            android:maxLength="15"
+            android:drawableLeft="@drawable/grisusuario"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model"
+            android:textColor="@color/black"
+            android:textSize="6.5pt"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:id="@+id/edtTxtModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:maxLength="15"
+            android:drawableLeft="@drawable/grisusuario"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand"
+            android:textColor="@color/black"
+            android:textSize="6.5pt"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:id="@+id/edtTxtBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto"
+            android:maxLength="15"
+            android:drawableLeft="@drawable/grisusuario"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colour"
+            android:textColor="@color/black"
+            android:textSize="6.5pt"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:id="@+id/edtTxtColour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto"
+            android:maxLength="15"
+            android:drawableLeft="@drawable/grisusuario"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cylinder Capacity"
+            android:textColor="@color/black"
+            android:textSize="6.5pt"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:id="@+id/edtTxtCylinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto"
+            android:maxLength="15"
+            android:drawableLeft="@drawable/grisusuario"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/fondocrema"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addvehicle"
+            android:text="ADD"
+            android:textColor="@color/texto"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/boton_ovalado"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelVehicle"
+            android:text="CANCEL"
+            android:textColor="@color/texto"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/boton_ovalado"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
